@@ -41,6 +41,22 @@
     border-bottom-right-radius: 10px;    
     background-size: cover;
 }
+.card-image4{
+    grid-area: image;
+    background: url(../img/carousmount/Kilimanjaro2\ -\ Tanzania.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;    
+    background-size: cover;
+}
+.card-image5{
+    grid-area: image;
+    background: url(../img/carousmount/Elbrus2\ -\ Rusia.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;    
+    background-size: cover;
+}
 /*Tambahkan hingga card-image7*/
 
 .card-text{
