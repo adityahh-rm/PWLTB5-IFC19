@@ -1,0 +1,105 @@
+/* Card infography */
+.card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 16px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,9);
+    text-align: center;
+    /* border-style: solid white; */
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px auto;
+}
+/* informasi gambar */
+.card-image{
+    grid-area: image;
+    background: url(../img/carousmount/Everest\ -\ Nepal.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;    
+    background-size: cover;
+}
+.card-image2{
+    grid-area: image;
+    background: url(../img/carousmount/Aconcagua\ -\ Argentina.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;    
+    background-size: cover;
+}
+.card-image3{
+    grid-area: image;
+    background: url(../img/carousmount/Denali2\ -\ USA.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 10px;    
+    background-size: cover;
+}
+/*Tambahkan hingga card-image7*/
+
+.card-text{
+    grid-area: text;
+    margin: 15px;
+}
+
+.card-text .location{
+    color: black;
+    font-size: 13px;
+}
+
+.card-text p{
+    color: black;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.card-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(0,0,0);
+}
+
+.card-stats .stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+
+.card-stats .type{
+    font-size: 9px;
+    font-weight: 150;
+    text-transform: uppercase;
+}
+
+.card-stats .value{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-stats .bord{
+    border-left: 1px solid #ffa;
+    border-right: 1px solid #ffa;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
