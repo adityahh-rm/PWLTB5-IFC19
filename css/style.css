@@ -265,3 +265,110 @@ section .container-p1 > *{
     flex-direction: row;
     /* margin: 10px -15px -15px; */
 }
+
+/* EXPEDITION */
+section .exped{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#expedition #exped-7{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.exped h2 span {
+	margin-left: 1em;
+	color: white;
+	font-size: 12px;
+}
+
+.exped .column {
+	/* margin: 15px 15px 0; */
+    /* margin: auto 220px; */
+    justify-content: center;
+    display: flex;
+	padding: 0;
+}
+.exped .column:last-child {
+	padding-bottom: 60px;
+}
+.exped .column::after {
+	content: '';
+	clear: both;
+	display: flex;
+}
+/* pengaturan hover pada text */
+.exped .column div { 
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 400px;
+	margin: 0 10px;
+	padding: 0;
+}
+.exped .column div:first-child {
+	margin-left: 20px;
+}
+.exped .column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: 999;
+	display: block;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+
+.column .ex{
+    margin: auto 100%;
+}
+
+.exped figure {
+	width: 200px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+.exped figure img{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+.exped figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+/* effect di ekspedisinya */
+.hover07 figure img {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover07 figure:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+/* Button Hover Expedition */
+#expedButton{
+    margin: 50px auto ;
+}
