@@ -465,4 +465,29 @@ section .exped{
     margin-bottom: 0;
 }
 
-/* Belum Responsive */
+/*Responsive */
+@media (max-width: 1080px){
+    .box-title-content{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      } 
+}
+
+@media (max-width: 990px){
+      .exped .column{
+          flex-wrap: wrap;
+      }
+
+      .exped .column .ex {
+          margin: 30px 10px;
+          /* padding: 10px; */
+      }
+}
+
+@media (max-width: 720px) {
+  .box-title-content {
+      display: flex;
+      flex-direction: column;
+  }
+}
